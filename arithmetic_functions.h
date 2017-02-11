@@ -1,15 +1,17 @@
-float add(int a, int b)
+float add(float a, float b)
 { return a + b;
 }
 
-float subt(int x, int y)
+float subt(float x, float y)
 {return x-y;
 }
 
-float mult(int r, int s)
+float mult(float r, float s)
 {return r*s;
 }
 
-float div(int p, int q)
-{return p/q;
+float div(float p, float q)
+{
+  if(q == 0) return 0;
+  return p/q;
 }
